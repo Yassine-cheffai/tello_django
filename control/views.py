@@ -78,6 +78,7 @@ def emergency_stop(request):
 
 
 def flip_forward(request):
+    # need to be tested in large area , no idea about it's behavior
     tello.flip_forward()
     return HttpResponseRedirect("/control")
 
