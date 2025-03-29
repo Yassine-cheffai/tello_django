@@ -88,10 +88,6 @@ def flip_backward(request):
 
 
 def index(request):
-    # return render(
-    #     request, "control/index.html", context={"connected": False, "battery": 0}
-    # )
-
     try:
         tello.connect(wait_for_state=False)
         battery = tello.get_battery()
